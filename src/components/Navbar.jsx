@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import 'bootstrap/dist/css/bootstrap.css'
-import  {FaShoppingCart}  from 'react-icons/fa'
+import  {AiFillShopping}  from 'react-icons/ai'
 
 
 
@@ -20,7 +20,7 @@ const NavBarMenu = () => {
       <Nav.Link href="#pricing">About</Nav.Link>
     </Nav>
       </Container>
-      <FaShoppingCart className='yellow'/>
+      <AiFillShopping className='yellow'/>
   </Navbar>
 </>
   
