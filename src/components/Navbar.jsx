@@ -4,15 +4,16 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import 'bootstrap/dist/css/bootstrap.css'
 import  {AiFillShopping}  from 'react-icons/ai'
-
+import  {GiConcentricCrescents}  from 'react-icons/gi'
 
 
 
 
 const NavBarMenu = () => {
   return <>
- <Navbar bg="dark" variant="dark" sticky='top'>
-    <Container>
+    <Navbar bg="dark" variant="dark" sticky='top'>
+      <Container>
+      <GiConcentricCrescents className='red'/>
     <Navbar.Brand href="#home">VINTAGE VIBES</Navbar.Brand>
     <Nav className="me-auto">
       <Nav.Link href="#home" className='Itemnav'>Home</Nav.Link>
