@@ -1,8 +1,8 @@
-/* 
+
 .yellow{
   font-size: 35px;
-  color: black;
-  margin-right: 10px;
+  color: rgb(255, 149, 0);
+  margin: 15px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end ;
@@ -10,20 +10,3 @@
 }
 
 
-.App-header {
-  background-color: #fedfd3;
-  min-height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  font-size: calc(10px + 2vmin);
-  color: red;
-} 
-
-.Itemnav{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
- */
