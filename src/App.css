@@ -2,7 +2,7 @@
 .yellow{
   font-size: 35px;
   color: rgb(255, 149, 0);
-  margin: 10px;
+  margin: 12px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end ;
@@ -11,7 +11,7 @@
 .red{
   font-size: 35px;
   color: red;
-  margin: 10px;
+  margin: 12px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end ;
