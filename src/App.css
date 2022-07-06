@@ -1,7 +1,8 @@
 
 .yellow{
+
   font-size: 35px;
-  color: rgb(255, 149, 0);
+  color: #1f6cab;
   margin: 12px;
   display: flex;
   flex-direction: column;
@@ -17,3 +18,13 @@
   justify-content: flex-end ;
 }
 
+.contenedorItemList{
+  background: #082a3a;
+  color: #1f6cab;
+  text-decoration: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
