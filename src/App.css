@@ -1,7 +1,7 @@
 
 .yellow{
 
-  font-size: 35px;
+  font-size: 75px;
   color: #1f6cab;
   margin: 12px;
   display: flex;
@@ -28,3 +28,30 @@
   justify-content: center;
   align-items: center;
 }
+
+.contador{
+  color: red;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.boton-contador{
+ 
+margin: 8px; 
+display: flex;
+flex-direction: row; 
+justify-content: flex-end;
+gap: 5px;
+align-items:  center;
+}
+
+.add-btn{
+width: 90%;
+margin: 8px;
+display: flex;
+flex-direction: row; 
+justify-content: flex-end;
+align-items:  center;
+}
+
