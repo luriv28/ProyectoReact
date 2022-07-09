@@ -1,4 +1,7 @@
-const ItemListContainer = ({ greeting, handleClick }) => {
+const ItemListContainer = ({ greeting }) => {
+  const handleClick = () => {
+    alert("Proximamente podras visualizar todas nuestras novedades");
+  };
   return (
     <>
       <div>
