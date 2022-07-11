@@ -2,7 +2,6 @@
 import './App.css';
 import NavBarMenu from './components/Navbar'
 import ItemListContainer from './components/ItemListContainer';
-import ItemCount from './components/ItemCount';
 
 
 
