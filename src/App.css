@@ -3,6 +3,10 @@
   padding: 0%;
   box-sizing: border-box;
 }
+.App{
+  background: rgba(0, 0, 0, 0.2);
+  
+}
 .yellow{
 
   font-size: 75px;
@@ -63,6 +67,7 @@ align-items:  center;
 }
 
 .container-titulo {
+  margin:  1px;
   text-align: center;
   font-size: 3rem;
   background: black;

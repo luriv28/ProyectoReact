@@ -18,7 +18,7 @@ const Item = ({ item, id }) => {
           <Card.Text className="item-description">{item.price}</Card.Text>
           <Card.Text className="item-description">{item.description}</Card.Text>
           <Card.Text className="item-description">{item.stock}</Card.Text>
-          <Button variant="danger">Go somewhere</Button>
+          <Button variant="danger">Add to cart</Button>
         </Card.Body>
         {/* <ItemCount stock={item.stock} initial={1} onAdd={onAdd} /> */}
       </Card>
