@@ -29,6 +29,7 @@ const ItemListContainer = ({ greeting }) => {
         <a href="/" className="contenedorItemList">
           <h3 onClick={() => handleClick()}>{greeting}</h3>
         </a>
+        <h3 className="container-titulo">Vibes</h3>
         <ItemList items={items} />
       </div>
     </>
