@@ -22,9 +22,10 @@ const NavBarMenu = () => {
             </Nav.Link>
             <Nav.Link href="#features">Features</Nav.Link>
             <Nav.Link href="#pricing">About</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
           </Nav>
         </Container>
-        <ItemCount stock={6} initial={1} onAdd={onAdd} />
+        <ItemCount stock={20} initial={1} onAdd={onAdd} />
         <CartWidget />
       </Navbar>
     </>
