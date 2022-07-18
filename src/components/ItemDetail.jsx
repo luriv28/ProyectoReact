@@ -1,11 +1,10 @@
-import products from "../mock/products";
 import ItemCount from "./ItemCount";
 
 const ItemDetail = ({ item }) => {
-  const onAdd = (cantidad) => {
-    console.log("seleccionaste ", cantidad, " items");
-  };
-
+  // const onAdd = (cantidad) => {
+  //   console.log("seleccionaste ", cantidad, " items");
+  // };
+  console.log(item);
   return (
     <div className="itemDetail">
       <div className="img-detail-cont">
@@ -15,7 +14,7 @@ const ItemDetail = ({ item }) => {
         <div className="titulo-container">
           <h4>{item.name}</h4>
 
-          <h3 style={{ color: "red" }}>${item.price}</h3>
+          <h3 style={{ color: "red" }}>{item.price}</h3>
           <p>{item.description}</p>
           {/* <ItemCount stock={item.stock} precio={item.price} onAdd={onAdd} /> */}
         </div>

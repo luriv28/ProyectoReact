@@ -21,7 +21,7 @@ const Item = ({ item, id }) => {
           {/* <Card.Text className="item-description">{item.description}</Card.Text> */}
           <Card.Text className="item-description">{item.stock}</Card.Text>
           <ItemCount stock={20} initial={1} onAdd={onAdd} />
-          <Link to={`/item/${item.id}`}>
+          <Link to={`/item/${item.id}`} className="botonDetalle">
             <Button variant="danger">Detalle</Button>
           </Link>
         </Card.Body>

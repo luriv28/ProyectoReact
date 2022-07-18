@@ -67,14 +67,14 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .boton-contador{
 margin: 8px; 
 display: flex;
 flex-direction: row; 
 justify-content: flex-end;
-gap: 5px;
+gap: 6px;
 align-items:  center;
 }
 
@@ -89,6 +89,12 @@ align-items:  center;
 
 .numeroContador{
   padding-top: 1rem;
+}
+.botonDetalle{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .container-titulo {
@@ -113,7 +119,7 @@ align-items:  center;
   color: #333;
   padding: 10px;
   margin: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.845);
+  box-shadow: 0 0 10px rgb(6, 76, 188);
   border-radius: 8px;
   
   flex-direction: column;
@@ -150,7 +156,8 @@ align-items:  center;
 }
 
 .img-detail-cont {
-  height: 550px;
+  padding-bottom: 10px;
+  height: 580px;
   width: 600px;
   
 }
