@@ -15,7 +15,7 @@ const ItemListContainer = ({ greeting }) => {
     const traerProductos = new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(products);
-      }, 2000);
+      }, 500);
     });
     //la informacion de lo que se resuelve en la promesa me llega por parametro, y le pongo el nombre que quiera -info-
     traerProductos.then((info) => {

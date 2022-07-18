@@ -8,7 +8,7 @@
 }
 .yellow{
 
-  font-size: 75px;
+  font-size: 40px;
   color: #1f6cab;
   margin: 12px;
   display: flex;
@@ -22,9 +22,35 @@
   margin: 12px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end ;
+  
 }
 
+.logo-container{
+  text-decoration: none;
+}
+
+.me-auto{
+  margin-right: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+.link{
+  text-decoration: none;
+  margin: 0 10px;
+  color: gray;
+}
+.link-activo{
+  text-decoration: none;
+  margin: 0 10px;
+  color: gray;
+  border: 1px solid gray;
+  padding: 4px 8px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgb(34, 34, 34);
+}
 .contenedorItemList{
   background: #082a3a;
   color: #1f6cab;

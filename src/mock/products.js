@@ -5,7 +5,7 @@ const products = [
         price:  "u$s 100",
         stock: 20,
         description: "cuadro normal",
-        category: "cuadros",
+        categoria: "cuadro",
         img: 'img/cuadro1.jpg'
     },
 
@@ -15,7 +15,7 @@ const products = [
         price:  "u$s 100",
         stock: 20,
         description: "cuadro normal",
-        category: "cuadros",
+        categoria: "cuadro",
         img: 'img/cuadro2.jpg'
 
     },
@@ -26,7 +26,7 @@ const products = [
         price:"u$s 100",
         stock: 20,
         description: "cuadro normal",
-        category: "cuadros",
+        categoria: "cuadro",
         img: 'img/cuadro3.jpg'
     },
 
@@ -36,7 +36,7 @@ const products = [
         price:  "u$s 100",
         stock: 20,
         description: "cuadro normal",
-        category: "cuadros",
+        categoria: "cuadro",
         img: 'img/cuadro4.jpg'
         
     },
@@ -47,7 +47,7 @@ const products = [
         price: "u$s 100",
         stock: 20,
         description: "cuadro normal",
-        category: "cuadros",
+        categoria: "cuadro",
         img: 'img/cuadro5.jpg'
     },
 
@@ -57,7 +57,7 @@ const products = [
         price:  "u$s 100",
         stock: 20,
         description: "cuadro normal",
-        category: "cuadros",
+        categoria: "cuadro",
         img: 'img/cuadro6.jpg'
     },
 
@@ -67,7 +67,7 @@ const products = [
         price:  "u$s 200",
         stock: 20,
         description: "cuadro retro iluminado",
-        category: "cuadros",
+        categoria: "retro",
         img: 'img/cuadro7.jpg'
     },
 
@@ -77,7 +77,7 @@ const products = [
         price: "u$s 200",
         stock: 20,
         description: "cuadro retro iluminado",
-        category: "cuadros",
+        categoria: "retro",
         img: 'img/cuadro8.jpg'
     }
 

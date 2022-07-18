@@ -1,8 +1,8 @@
-import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import './App.css';
 import NavBarMenu from './components/Navbar'
 import ItemListContainer from './components/ItemListContainer';
-
+import ItemDetailContainer from './components/ItemDetailContainer';
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
 
 
 function App() {
@@ -10,14 +10,16 @@ function App() {
   //   console.log("click")
   // }
   return (
-    <div className="App">
-      <BrowserRouter>
-        <NavBarMenu /> 
-        <Routes>
-        <Route path='/' element={<ItemListContainer greeting="WELCOME TO OUR WORLD"/>}/>
-        </Routes>
-      </BrowserRouter>
-    </div>
+    
+    <BrowserRouter className="App">
+          <NavBarMenu /> 
+      <Routes>
+       <Route exact path='/' element={<ItemListContainer greeting="WELCOME TO OUR WORLD" />} />
+       <Route exact path='/categorias/:categoria' element={<ItemListContainer greeting="WELCOME TO OUR WORLD" />} />
+       <Route exact path='/item/:id' element={<ItemDetailContainer/>}></Route> 
+      </Routes>
+    </BrowserRouter>
+    
   );
 }
 

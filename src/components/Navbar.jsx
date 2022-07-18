@@ -5,27 +5,43 @@ import Nav from "react-bootstrap/Nav";
 import "bootstrap/dist/css/bootstrap.css";
 import { GiConcentricCrescents } from "react-icons/gi";
 import CartWidget from "./CartWidget";
-import ItemCount from "./ItemCount";
+import { NavLink } from "react-router-dom";
+
 const NavBarMenu = () => {
-  const onAdd = () => {
-    console.log("click");
-  };
   return (
     <>
       <Navbar bg="dark" variant="dark" sticky="top">
         <Container>
           <GiConcentricCrescents className="red" />
-          <Navbar.Brand href="#home">VINTAGE VIBES</Navbar.Brand>
+          <NavLink to="/" className="logo-container">
+            {<Navbar.Brand to="/"> VINTAGE VIBES</Navbar.Brand>}
+          </NavLink>
           <Nav className="me-auto">
-            <Nav.Link href="#home" className="Itemnav">
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "link-activo" : "link")}
+            >
               Home
-            </Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">About</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
+            </NavLink>
+            <NavLink
+              to="/categorias/cuadro"
+              c
+              className={({ isActive }) => (isActive ? "link-activo" : "link")}
+            >
+              Cuadros Simples
+            </NavLink>
+            <NavLink
+              to="/categorias/retro"
+              className={({ isActive }) => (isActive ? "link-activo" : "link")}
+            >
+              Cuadros Retro
+            </NavLink>
+            <NavLink to="/" className="link">
+              Contact
+            </NavLink>
           </Nav>
         </Container>
-        <ItemCount stock={20} initial={1} onAdd={onAdd} />
+
         <CartWidget />
       </Navbar>
     </>

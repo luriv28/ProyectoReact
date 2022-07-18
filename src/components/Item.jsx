@@ -1,11 +1,13 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "bootstrap/dist/css/bootstrap.css";
-// import ItemCount from "./ItemCount";
+import ItemCount from "./ItemCount";
+import { NavLink } from "react-router-dom";
+
 const Item = ({ item, id }) => {
-  // const onAdd = () => {
-  //   console.log("click");
-  // };
+  const onAdd = () => {
+    console.log("click");
+  };
 
   //este componente se va a encargar de renderizar en el dom
   return (
@@ -18,9 +20,11 @@ const Item = ({ item, id }) => {
           <Card.Text className="item-description">{item.price}</Card.Text>
           <Card.Text className="item-description">{item.description}</Card.Text>
           <Card.Text className="item-description">{item.stock}</Card.Text>
-          <Button variant="danger">Add to cart</Button>
+          <ItemCount stock={20} initial={1} onAdd={onAdd} />
+          <NavLink to={`/item/${item.id}`}>
+            <Button variant="danger">Detalle</Button>
+          </NavLink>
         </Card.Body>
-        {/* <ItemCount stock={item.stock} initial={1} onAdd={onAdd} /> */}
       </Card>
     </div>
   );
