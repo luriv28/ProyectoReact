@@ -15,7 +15,7 @@ function App() {
           <NavBarMenu /> 
       <Routes>
        <Route exact path='/' element={<ItemListContainer greeting="WELCOME TO OUR WORLD" />} />
-       <Route exact path='/categorias/:categoria' element={<ItemListContainer greeting="WELCOME TO OUR WORLD" />} />
+       <Route exact path='/categories/:category' element={<ItemListContainer greeting="WELCOME TO OUR WORLD" />} />
        <Route exact path='/item/:id' element={<ItemDetailContainer/>}></Route> 
       </Routes>
     </BrowserRouter>

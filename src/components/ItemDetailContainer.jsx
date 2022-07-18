@@ -4,7 +4,8 @@ import products from "../mock/products";
 import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = () => {
-  const { item, setItem } = useState({});
+  const [item, setItem] = useState({});
+  console.log(useState());
   const { id } = useParams;
   const TraerItemPorId = () => {
     return new Promise((resolve) => {
@@ -20,7 +21,7 @@ const ItemDetailContainer = () => {
     });
   }, []);
 
-  return <ItemDetail item={products} />;
+  return <ItemDetail item={item} />;
 };
 
 export default ItemDetailContainer;

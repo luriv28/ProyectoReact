@@ -9,13 +9,13 @@ const ItemDetail = ({ item }) => {
   return (
     <div className="itemDetail">
       <div className="img-detail-cont">
-        <img src={item.img} alt={item.name} className="img-detail" />
+        <img src={item.img} className="img-detail" />
       </div>
       <div className="text-container">
         <div className="titulo-container">
           <h1>{item.name}</h1>
 
-          <h3 style={{ color: "whitesmoke" }}>${item.price}</h3>
+          <h3 style={{ color: "red" }}>${item.price}</h3>
         </div>
 
         <p>{item.description}</p>

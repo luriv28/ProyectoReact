@@ -24,14 +24,13 @@ const NavBarMenu = () => {
               Home
             </NavLink>
             <NavLink
-              to="/categorias/cuadro"
-              c
+              to="/categories/cuadro"
               className={({ isActive }) => (isActive ? "link-activo" : "link")}
             >
               Cuadros Simples
             </NavLink>
             <NavLink
-              to="/categorias/retro"
+              to="/categories/retro"
               className={({ isActive }) => (isActive ? "link-activo" : "link")}
             >
               Cuadros Retro
