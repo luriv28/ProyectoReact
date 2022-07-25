@@ -30,7 +30,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
             variant="outline-primary"
             style={{ marginTop: "1rem" }}
             className="add-btn"
-            onClick={onAdd}
+            onClick={() => onAdd(count)}
           >
             Add to cart
           </Button>
