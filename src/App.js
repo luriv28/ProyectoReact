@@ -2,15 +2,11 @@ import './App.css';
 import NavBarMenu from './components/Navbar'
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
-import CartContext from '../src/Context/CartContext'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Provider from '../src/Context/CartContext';
-
-
+import Cart from './components/Cart';
 function App() {
-  // const onAdd = () => {
-  //   console.log("click")
-  // }
+
   return (
     <Provider>
       <BrowserRouter className="App">
@@ -19,7 +15,7 @@ function App() {
             <Route exact path='/' element={<ItemListContainer greeting="WELCOME TO OUR WORLD" />} />
             <Route exact path='/categories/:category' element={<ItemListContainer greeting="WELCOME TO OUR WORLD" />} />
             <Route exact path='/item/:id' element={<ItemDetailContainer />}></Route> 
-            <Route exact path='/cart' element={<CartContext/>} />
+            { <Route exact path='/cart' element={<Cart/>} /> }
           </Routes>
       </BrowserRouter>
     </Provider>

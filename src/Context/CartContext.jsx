@@ -30,28 +30,37 @@ const Provider = (props) => {
     setCart(newCart);
   };
 
-  // const addToCart = (item, cantidad) => {
-  //   if (isInCart(item.id)) {
-  //sumo la cantidad
-
-  //   alert("El producto ya esta en el carrito");
-  // } else {
-  //   setCart([...cart, { ...item, cantidad }]);
-  //agrego al carrito
-  // }
-
-  //console.log({ ...item, cantidad });
-
-  // console.log("agregando al carrito");
-  // };
-
   const isInCart = (id) => {
     return cart.some((prod) => prod.id === id);
   };
 
+  const clearCart = () => setCart([]);
+
+  const totalPrice = () => {
+    //prev es un acumulador aca tambien
+    return cart.reduce((prev, act) => prev + act.cantidad * act.price, 0);
+  };
+
+  const totalProducts = () =>
+    cart.reduce(
+      (acumulador, productoActual) => acumulador + productoActual.cantidad,
+      0
+    );
+
+  const removeProduct = (id) => setCart(cart.filter((item) => item.id !== id));
+
   //si en value paso solo una prop, van {}, si paso 2 o mas va {{}}
   return (
-    <CartContext.Provider value={{ cart, addToCart }}>
+    <CartContext.Provider
+      value={{
+        addToCart,
+        clearCart,
+        removeProduct,
+        totalPrice,
+        totalProducts,
+        cart,
+      }}
+    >
       {props.children}
     </CartContext.Provider>
   );

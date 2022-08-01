@@ -2,7 +2,7 @@ const products = [
     {
         id: "1",
         name: "Cuadro Horizon",
-        price:  "u$s 100",
+        price:  100,
         stock: 20,
         description: "Cuadro con fondo de horizonte. No rgb.",
         category: "cuadro",
@@ -13,7 +13,7 @@ const products = [
     {
         id: "2",
         name: "Cuadro Night",
-        price:  "u$s 100",
+        price:  100,
         stock: 20 ,
         description: "Cuadro con fondo de anochecer. No rgb.",
         category: "cuadro",
@@ -24,7 +24,7 @@ const products = [
     {
         id: "3",
         name: "Cuadro Goku",
-        price:"u$s 100",
+        price:100,
         stock: 20,
         description: "Cuadro de Son Goku, protagonista de Dragon Ball. No rgb.",
         category: "cuadro",
@@ -35,7 +35,7 @@ const products = [
     {
         id: "4",
         name: "Cuadro Web",
-        price:  "u$s 100",
+        price:  100,
         stock: 20,
         description: "Cuadro con diseño de telaraña. Retro iluminado.",
         category: "retro",
@@ -47,7 +47,7 @@ const products = [
     {
         id: "5",
         name: "Cuadro Infinity",
-        price: "u$s 100",
+        price: 100,
         stock: 20,
         description: "Cuadro con fondo de lago espejando el cielo. No rgb.",
         category: "cuadro",
@@ -58,7 +58,7 @@ const products = [
     {
         id: "6",
         name: "Cuadro Shen-Long",
-        price:  "u$s 100",
+        price: 150,
         stock: 20,
         description: "Cuadro de Shen-Long, dragón dios del anime Dragon Ball. No rgb.",
         category: "cuadro",
@@ -69,7 +69,7 @@ const products = [
     {
         id: "7",
         name: "Cuadro Shingeky",
-        price:  "u$s 200",
+        price:  200,
         stock: 20,
         description: "Cuadro con el fondo presentando a Levy Ackerman, general de las Tropas de Reconocimiento, del anime Attack on Titans. Retro iluminado.",
         category: "retro",
@@ -80,7 +80,7 @@ const products = [
     {
         id: "8",
         name: "Cuadro Amaterasu",
-        price: "u$s 200",
+        price: 220,
         stock: 20,
         description: "Cuadro con el fondo presentando a Shisui Uchiha, uno de los antagonistas principales del anime Naruto:Shippuden. Retro iluminado.",
         category: "retro",

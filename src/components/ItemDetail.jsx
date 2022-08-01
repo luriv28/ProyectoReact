@@ -10,16 +10,10 @@ const ItemDetail = ({ item }) => {
 
   const { addToCart } = useContext(CartContext); //aca llamo a la funcion creada en cartContext.
 
-  // console.log("valores del contexto", prueba);
-  // console.log("cart", prueba.cart);
-
   const onAdd = (cantidad) => {
     setCantidad(cantidad);
     addToCart(item, cantidad); //aca vamos a pasar 2 parametros, la info del prod y  la cantidad
-    // console.log("La cantidad es: ", cantidad);
   };
-
-  // console.log(item);
 
   return (
     <div className="itemDetail">
@@ -30,14 +24,16 @@ const ItemDetail = ({ item }) => {
         <div className="titulo-container">
           <h4>{item.name}</h4>
 
-          <h3 style={{ color: "red" }}>{item.price}</h3>
+          <h3 style={{ color: "red" }}>US$ {item.price}</h3>
           <p>{item.description}</p>
 
           {cantidad === 0 ? (
             <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
           ) : (
-            <Link to="/cart">Go to shop cart!</Link>
+            <Link to="/Cart">Go to shop cart!</Link>
           )}
+          <br />
+          <Link to="/">Continue shopping</Link>
         </div>
       </div>
     </div>

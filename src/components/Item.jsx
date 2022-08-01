@@ -17,7 +17,7 @@ const Item = ({ item, id }) => {
 
         <Card.Body>
           <Card.Title className="item-title">{item.name}</Card.Title>
-          <Card.Text className="item-description">{item.price}</Card.Text>
+          <Card.Text className="item-description">US$ {item.price}</Card.Text>
           {/* <Card.Text className="item-description">{item.description}</Card.Text> */}
           <Card.Text className="item-description">{item.stock}</Card.Text>
           {/* {<ItemCount stock={item.stock} initial={1} onAdd={onAdd} />} */}
