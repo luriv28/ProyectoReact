@@ -1,8 +1,16 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import products from "../mock/products";
+// import products from "../mock/products";
 import ItemList from "./ItemList";
+
+import {
+  getFirestore,
+  collection,
+  getDocs,
+  query,
+  where,
+} from "firebase/firestore";
 
 const ItemListContainer = ({ greeting }) => {
   const handleClick = () => {
@@ -12,21 +20,28 @@ const ItemListContainer = ({ greeting }) => {
   const [items, setItems] = useState([]);
   const { category } = useParams();
   useEffect(() => {
-    //aca dentro hago la promesa
-    const traerProductos = new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve(
-          category
-            ? products.filter((obj) => obj.category === category)
-            : products
-        );
-      }, 500);
-    });
-    //la informacion de lo que se resuelve en la promesa me llega por parametro, y le pongo el nombre que quiera -info-
-    traerProductos.then((info) => {
-      setItems(info);
-    });
+    const querydb = getFirestore();
+    const queryCollection = collection(querydb, "productos");
+    // const queryFilter = query(
+    //   queryCollection,
+    //   where("categoria", "==", category)
+    // );
+    if (category) {
+      const queryFilter = query(
+        queryCollection,
+        where("category", "==", category)
+      );
+      getDocs(queryFilter).then((res) =>
+        setItems(res.docs.map((item) => ({ id: item.id, ...item.data() })))
+      );
+    } else {
+      getDocs(queryCollection).then((res) =>
+        setItems(res.docs.map((item) => ({ id: item.id, ...item.data() })))
+      );
+    }
   }, [category]);
+
+  //la informacion de lo que se resuelve en la promesa me llega por parametro, y le pongo el nombre que quiera -info-
 
   return (
     <>
