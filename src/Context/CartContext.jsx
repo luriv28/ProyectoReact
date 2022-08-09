@@ -55,6 +55,7 @@ const Provider = (props) => {
       value={{
         addToCart,
         clearCart,
+
         removeProduct,
         totalPrice,
         totalProducts,
